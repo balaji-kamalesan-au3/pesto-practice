@@ -1,0 +1,46 @@
+.userDetailsContainer{
+    height: 60vh;
+    width: 70vw;
+    margin: auto;
+    background-color: lightgray;
+    display : flex;
+    flex-wrap: wrap;
+}
+
+.mainUserDetails{
+    border-right: 1px dotted black;
+    flex:20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+}
+
+.accountDetails{
+    flex:32%;
+    display : flex;
+    flex-direction: column;
+    justify-content : center;
+    padding: auto;
+    border-right: 1px dotted black;
+}
+
+.form-control{
+    width: 80%;
+    padding : 3%;
+    margin : 1%;
+    cursor: text;
+}
+
+.locationDetails{
+    flex: 20%;
+    display : flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items: center
+}
+
+.avatar{
+    border-radius: 50%;
+}
+

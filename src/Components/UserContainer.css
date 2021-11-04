@@ -1,0 +1,22 @@
+.container{
+    height: 85vh;
+    width: 85vw;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.btn{
+    margin-top: 2%;
+    width: 6vw;
+    height: 9vh;
+    border: none;
+    background: transparent;
+    font-weight: bold
+}
+
+.btn:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    border: 3px dashed gray;
+    border-radius: 5%;
+}
