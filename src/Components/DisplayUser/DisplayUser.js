@@ -1,12 +1,11 @@
-import DetailsForm from './DetailsForm';
+import DetailsForm from '../DetailsForm/DetailsForm';
 import './DisplayUser.css'
 
 export default function DisplayUser ({userData}){
     console.log(userData)
     const {name, email,gender,picture,location,phone,login} = userData;
     const age =userData.dob.age;
-    const username = login.username;
-    const password = login.password;
+    const {username ,password} = login;
     const detailsForm = {username,password,gender,age}
 
     return <div className="userDetailsContainer">
