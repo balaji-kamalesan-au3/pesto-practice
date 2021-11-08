@@ -2,6 +2,7 @@ import './UserContainer.css';
 import {useEffect,useState} from 'react'
 import DisplayUser from '../DisplayUser/DisplayUser';
 import { apiURL, refreshImage } from '../../Constants/constants';
+import Button from '../General Components/Button/Button';
 
 
 export default function UserContainer(){
@@ -21,10 +22,8 @@ export default function UserContainer(){
     }, [])
 
     return <div className = 'container' >
-        <button className="btn" onClick={() => fetchUsers()}>
-            <img src={refreshImage.src} alt ={refreshImage.altText} /> 
-            <div>Refresh</div>
-        </button>
+
+        <Button src = {refreshImage.src} altText = {refreshImage.altText} name="Refresh" onClick = {() => fetchUsers()} />
         {!isLoading && <DisplayUser userData={usersList} />}
         
         {isLoading && <h1>Loading....</h1>}
