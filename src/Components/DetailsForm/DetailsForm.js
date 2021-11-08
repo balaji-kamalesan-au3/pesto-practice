@@ -1,3 +1,5 @@
+import './DetailsForm.css'
+
 export default function DetailsForm({detailsForm}){
     const {username, password, gender, age} = detailsForm;
     return <>

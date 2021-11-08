@@ -25,12 +25,6 @@
     border-right: 1px dotted black;
 }
 
-.form-control{
-    width: 80%;
-    padding : 3%;
-    margin : 1%;
-    cursor: text;
-}
 
 .locationDetails{
     flex: 20%;
